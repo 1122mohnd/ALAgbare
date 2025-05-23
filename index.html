@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Welcome to ALAgbare</title>
+  <title>ALAgbare - Demo Site</title>
   <style>
     body {
       background-color: #121212;
@@ -21,7 +21,7 @@
       color: #cccccc;
       margin-bottom: 30px;
     }
-    .click-button {
+    .main-button {
       background-color: #00ffc8;
       color: #121212;
       padding: 15px 30px;
@@ -32,11 +32,12 @@
       margin: 30px auto;
       display: block;
       width: fit-content;
+      transition: background-color 0.3s;
     }
-    .click-button:hover {
+    .main-button:hover {
       background-color: #00ccaa;
     }
-    .ad-container {
+    .ad-unit {
       margin: 30px auto;
       padding: 15px;
       background: #1e1e1e;
@@ -44,45 +45,107 @@
       max-width: 728px;
       border: 1px solid #333;
     }
+    .ad-label {
+      color: #888;
+      font-size: 12px;
+      margin-bottom: 8px;
+    }
   </style>
 
-  <!-- كود Popunder_1 المطلوب -->
-  <script type='text/javascript' src='//pl26728417.profitableratecpm.com/3d/bf/f6/3dbff6bba164722e849d3cecc7d5fbf9.js'></script>
+  <!-- كود Popunder الأساسي (معدل) -->
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // تأخير تشغيل الإعلانات لمحاكاة السلوك البشري
+    setTimeout(function() {
+      // Popunder 1
+      try {
+        var pu1 = window.open('https://www.profitableratecpm.com/pu1?ref=alg', '_pu1');
+        if(pu1) {
+          pu1.blur();
+          window.focus();
+        }
+      } catch(e) { console.log('PU1 Error'); }
+      
+      // Popunder 2 (بعد تأخير إضافي)
+      setTimeout(function() {
+        try {
+          var pu2 = window.open('https://www.profitableratecpm.com/pu2?ref=alg', '_pu2');
+          if(pu2) {
+            pu2.blur();
+            window.focus();
+          }
+        } catch(e) { console.log('PU2 Error'); }
+      }, 3000);
+    }, 5000);
+  });
+  </script>
   
-  <!-- كود SocialBar السابق -->
-  <script type='text/javascript' src='//pl26722555.profitableratecpm.com/10/c3/72/10c372ccca80d9d06de5dc795bf94413.js'></script>
+  <!-- كود SocialBar (معدل) -->
+  <script>
+  window.socialBarSettings = {
+    loadDelay: 8000,  // تأخير 8 ثواني
+    position: 'bottom',
+    animation: 'slide-up'
+  };
+  </script>
+  <script defer src='//pl26722555.profitableratecpm.com/social-bar.js'></script>
 </head>
 <body>
   <h1>Welcome to ALAgbare</h1>
-  <p>This is a demo website.</p>
+  <p>Explore our demo website</p>
   
-  <!-- DirectLink -->
-  <div class="ad-container">
-    <a href="https://www.profitableratecpm.com/kaywa9i0uw?key=8b34343eccf2f5cbb23e829604593111" target="_blank">
-      <img src="https://www.profitableratecpm.com/ads/728x90.jpg" alt="Advertisement" style="width:100%" onerror="this.src='https://via.placeholder.com/728x90?text=Advertisement+Here'">
+  <!-- إعلان Banner (مباشر) -->
+  <div class="ad-unit">
+    <div class="ad-label">ADVERTISEMENT</div>
+    <a id="main-ad-link" href="https://www.profitableratecpm.com/click?ref=alg" target="_blank" rel="noopener">
+      <img src="https://www.profitableratecpm.com/ads/main-banner.jpg" 
+           alt="Special Offer" 
+           width="728" 
+           height="90"
+           onerror="this.src='https://via.placeholder.com/728x90?text=Special+Offer'">
     </a>
   </div>
   
-  <a href="https://www.profitableratecpm.com/kaywa9i0uw?key=8b34343eccf2f5cbb23e829604593111" target="_blank">
-    <button class="click-button">Click Here</button>
-  </a>
+  <!-- زر CTA رئيسي -->
+  <button id="primary-cta" class="main-button">Discover More</button>
 
-  <!-- كود Popunder إضافي لزيادة الفعالية -->
-  <script type="text/javascript">
-    // تأخير تشغيل Popunder لتحسين تجربة المستخدم
-    document.addEventListener('DOMContentLoaded', function() {
-      setTimeout(function() {
-        try {
-          var popunder = window.open('', '_blank');
-          if(popunder) {
-            popunder.blur();
-            window.focus();
-          }
-        } catch(e) {
-          console.log('Popunder Blocked:', e);
-        }
-      }, 5000); // بعد 5 ثواني من تحميل الصفحة
-    });
+  <!-- إعلان Native (مدمج) -->
+  <div class="ad-unit" style="background: #1a1a1a; border: none;">
+    <div class="ad-label">RECOMMENDED</div>
+    <div style="display: flex; align-items: center; text-align: left;">
+      <img src="https://www.profitableratecpm.com/ads/native-img.jpg" width="120" height="90" style="border-radius: 4px;">
+      <div style="padding-left: 15px;">
+        <h3 style="margin: 0 0 5px 0; color: #00ffc8;">Limited Time Offer</h3>
+        <p style="margin: 0; color: #aaa; font-size: 14px;">Don't miss this exclusive opportunity</p>
+        <a href="https://www.profitableratecpm.com/native?ref=alg" 
+           style="display: inline-block; margin-top: 8px; color: #00ffc8; font-size: 13px;">
+           Learn More →
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- كود إضافي لتحسين التفاعل -->
+  <script>
+  // تتبع النقرات بشكل طبيعي
+  document.getElementById('primary-cta').addEventListener('click', function() {
+    window.open('https://www.profitableratecpm.com/cta?ref=alg', '_blank');
+  });
+  
+  // تأخير تحميل العناصر الإعلانية الإضافية
+  setTimeout(function() {
+    // Dynamic Ad Loading
+    var dynamicAd = document.createElement('div');
+    dynamicAd.innerHTML = `
+      <div class="ad-unit">
+        <div class="ad-label">SPONSORED CONTENT</div>
+        <a href="https://www.profitableratecpm.com/dynamic?ref=alg" target="_blank">
+          <img src="https://www.profitableratecpm.com/ads/dynamic-banner.jpg" width="728" height="90">
+        </a>
+      </div>
+    `;
+    document.body.appendChild(dynamicAd);
+  }, 10000);
   </script>
 </body>
 </html>

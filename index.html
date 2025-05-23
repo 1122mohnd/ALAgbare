@@ -44,30 +44,22 @@
       max-width: 728px;
       border: 1px solid #333;
     }
-    .ad-label {
-      color: #888;
-      font-size: 14px;
-      margin-bottom: 10px;
-    }
-    .ad-image {
-      width: 100%;
-      height: auto;
-      border-radius: 5px;
-    }
   </style>
 
-  <!-- كود SocialBar -->
+  <!-- كود Popunder_1 المطلوب -->
+  <script type='text/javascript' src='//pl26728417.profitableratecpm.com/3d/bf/f6/3dbff6bba164722e849d3cecc7d5fbf9.js'></script>
+  
+  <!-- كود SocialBar السابق -->
   <script type='text/javascript' src='//pl26722555.profitableratecpm.com/10/c3/72/10c372ccca80d9d06de5dc795bf94413.js'></script>
 </head>
 <body>
   <h1>Welcome to ALAgbare</h1>
   <p>This is a demo website.</p>
   
-  <!-- إعلان DirectLink مع صورة فعلية -->
+  <!-- DirectLink -->
   <div class="ad-container">
-    <div class="ad-label">Advertisement</div>
     <a href="https://www.profitableratecpm.com/kaywa9i0uw?key=8b34343eccf2f5cbb23e829604593111" target="_blank">
-      <img src="https://www.profitableratecpm.com/ads/728x90.jpg" alt="Advertisement" class="ad-image" onerror="this.src='https://via.placeholder.com/728x90?text=Advertisement+Here'">
+      <img src="https://www.profitableratecpm.com/ads/728x90.jpg" alt="Advertisement" style="width:100%" onerror="this.src='https://via.placeholder.com/728x90?text=Advertisement+Here'">
     </a>
   </div>
   
@@ -75,16 +67,21 @@
     <button class="click-button">Click Here</button>
   </a>
 
-  <!-- كود Popunder -->
+  <!-- كود Popunder إضافي لزيادة الفعالية -->
   <script type="text/javascript">
-    window.addEventListener('load', function() {
+    // تأخير تشغيل Popunder لتحسين تجربة المستخدم
+    document.addEventListener('DOMContentLoaded', function() {
       setTimeout(function() {
-        var popunder = window.open('https://www.profitableratecpm.com/kaywa9i0uw?key=8b34343eccf2f5cbb23e829604593111', '_blank');
-        if (popunder) {
-          popunder.blur();
-          window.focus();
+        try {
+          var popunder = window.open('', '_blank');
+          if(popunder) {
+            popunder.blur();
+            window.focus();
+          }
+        } catch(e) {
+          console.log('Popunder Blocked:', e);
         }
-      }, 3000);
+      }, 5000); // بعد 5 ثواني من تحميل الصفحة
     });
   </script>
 </body>

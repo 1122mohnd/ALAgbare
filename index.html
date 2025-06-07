@@ -1,151 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ALAgbare - Demo Site</title>
-  <style>
-    body {
-      background-color: #121212;
-      color: #ffffff;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding-top: 50px;
-      margin: 0;
-    }
-    h1 {
-      color: #00ffc8;
-      margin-bottom: 20px;
-    }
-    p {
-      color: #cccccc;
-      margin-bottom: 30px;
-    }
-    .main-button {
-      background-color: #00ffc8;
-      color: #121212;
-      padding: 15px 30px;
-      font-size: 18px;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      margin: 30px auto;
-      display: block;
-      width: fit-content;
-      transition: background-color 0.3s;
-    }
-    .main-button:hover {
-      background-color: #00ccaa;
-    }
-    .ad-unit {
-      margin: 30px auto;
-      padding: 15px;
-      background: #1e1e1e;
-      border-radius: 8px;
-      max-width: 728px;
-      border: 1px solid #333;
-    }
-    .ad-label {
-      color: #888;
-      font-size: 12px;
-      margin-bottom: 8px;
-    }
-  </style>
-
-  <!-- كود Popunder الأساسي (معدل) -->
-  <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    // تأخير تشغيل الإعلانات لمحاكاة السلوك البشري
-    setTimeout(function() {
-      // Popunder 1
-      try {
-        var pu1 = window.open('https://www.profitableratecpm.com/pu1?ref=alg', '_pu1');
-        if(pu1) {
-          pu1.blur();
-          window.focus();
-        }
-      } catch(e) { console.log('PU1 Error'); }
-      
-      // Popunder 2 (بعد تأخير إضافي)
-      setTimeout(function() {
-        try {
-          var pu2 = window.open('https://www.profitableratecpm.com/pu2?ref=alg', '_pu2');
-          if(pu2) {
-            pu2.blur();
-            window.focus();
-          }
-        } catch(e) { console.log('PU2 Error'); }
-      }, 3000);
-    }, 5000);
-  });
-  </script>
-  
-  <!-- كود SocialBar (معدل) -->
-  <script>
-  window.socialBarSettings = {
-    loadDelay: 8000,  // تأخير 8 ثواني
-    position: 'bottom',
-    animation: 'slide-up'
-  };
-  </script>
-  <script defer src='//pl26722555.profitableratecpm.com/social-bar.js'></script>
+  <meta charset="UTF-8">
+  <title>موقعي الشخصي</title>
 </head>
-<body>
-  <h1>Welcome to ALAgbare</h1>
-  <p>Explore our demo website</p>
-  
-  <!-- إعلان Banner (مباشر) -->
-  <div class="ad-unit">
-    <div class="ad-label">ADVERTISEMENT</div>
-    <a id="main-ad-link" href="https://www.profitableratecpm.com/click?ref=alg" target="_blank" rel="noopener">
-      <img src="https://www.profitableratecpm.com/ads/main-banner.jpg" 
-           alt="Special Offer" 
-           width="728" 
-           height="90"
-           onerror="this.src='https://via.placeholder.com/728x90?text=Special+Offer'">
-    </a>
-  </div>
-  
-  <!-- زر CTA رئيسي -->
-  <button id="primary-cta" class="main-button">Discover More</button>
+<body style="text-align: center; margin-top: 100px; font-family: Arial;">
 
-  <!-- إعلان Native (مدمج) -->
-  <div class="ad-unit" style="background: #1a1a1a; border: none;">
-    <div class="ad-label">RECOMMENDED</div>
-    <div style="display: flex; align-items: center; text-align: left;">
-      <img src="https://www.profitableratecpm.com/ads/native-img.jpg" width="120" height="90" style="border-radius: 4px;">
-      <div style="padding-left: 15px;">
-        <h3 style="margin: 0 0 5px 0; color: #00ffc8;">Limited Time Offer</h3>
-        <p style="margin: 0; color: #aaa; font-size: 14px;">Don't miss this exclusive opportunity</p>
-        <a href="https://www.profitableratecpm.com/native?ref=alg" 
-           style="display: inline-block; margin-top: 8px; color: #00ffc8; font-size: 13px;">
-           Learn More →
-        </a>
-      </div>
-    </div>
-  </div>
+  <h1>مرحباً بك في موقعي!</h1>
+  <p>اضغط على الزر التالي للدخول:</p>
 
-  <!-- كود إضافي لتحسين التفاعل -->
-  <script>
-  // تتبع النقرات بشكل طبيعي
-  document.getElementById('primary-cta').addEventListener('click', function() {
-    window.open('https://www.profitableratecpm.com/cta?ref=alg', '_blank');
-  });
-  
-  // تأخير تحميل العناصر الإعلانية الإضافية
-  setTimeout(function() {
-    // Dynamic Ad Loading
-    var dynamicAd = document.createElement('div');
-    dynamicAd.innerHTML = `
-      <div class="ad-unit">
-        <div class="ad-label">SPONSORED CONTENT</div>
-        <a href="https://www.profitableratecpm.com/dynamic?ref=alg" target="_blank">
-          <img src="https://www.profitableratecpm.com/ads/dynamic-banner.jpg" width="728" height="90">
-        </a>
-      </div>
-    `;
-    document.body.appendChild(dynamicAd);
-  }, 10000);
+  <a href="https://www.profitableratecpm.com/pjuh0xfn?key=ef3fcc5db470941fdb39fb032f62aecc" target="_blank">
+    <button style="padding: 15px 30px; font-size: 20px; background-color: #28a745; color: white; border: none; border-radius: 10px; cursor: pointer;">
+      اضغط هنا
+    </button>
+  </a>
+
+  <!-- الإعلان الأول -->
+  <script type='text/javascript' src='//pl26657570.profitableratecpm.com/3a/1a/7e/3a1a7e5bb8f85d62d5f33d7821f7bc90.js'></script>
+
+  <!-- رابط Profitableratecpm -->
+  <a href="https://www.profitableratecpm.com/h70t4hjz?key=2aada8eb8ad8d0f97331c54f9a2b7e75" style="display:none;"></a>
+
+  <!-- الإعلان الثاني -->
+  <script type='text/javascript' src='//pl26679460.profitableratecpm.com/ab/67/f4/ab67f4ccfcd44171f1cb396fac0aa490.js'></script>
+
+  <!-- الإعلان الثالث -->
+  <script async="async" data-cfasync="false" src="//pl26679610.profitableratecpm.com/b9d3148326a52a177454aedd982e5fb6/invoke.js"></script>
+  <div id="container-b9d3148326a52a177454aedd982e5fb6"></div>
+
+  <!-- الإعلان الرابع -->
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '3552de76a466885dde40bf660a3a159a',
+      'format' : 'iframe',
+      'height' : 250,
+      'width' : 300,
+      'params' : {}
+    };
   </script>
+  <script type="text/javascript" src="//www.highperformanceformat.com/3552de76a466885dde40bf660a3a159a/invoke.js"></script>
+
 </body>
 </html>
